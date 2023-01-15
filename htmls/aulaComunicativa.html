@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Influx</title>
+</head>
+<body>
+<!--<a href="../index.html"><h1><img src="../Imagens/logo.png" width="100px" alt=""> </h1></a>
+    <h2>Aulas Comunicativas</h2>
+    <p>Escolha o Livro</p>
+    <button type="menu"><a href="./aulaComunicativaB1.html"><img src="../Imagens/Book_1.jpg" width="150px" alt=""></a></button>
+    <button type="menu"><a href="./aulaComunicativaB2.html"><img src="../Imagens/BOOK_2.jpg" width="150px" alt=""></a>
+    <button type="menu"><a href="./aulaComunicativaB3.html"><img src="../Imagens/BOOK_3.jpg" width="150px" alt=""></a>
+    <button type="menu"><a href="./aulaComunicativaB4.html"><img src="../Imagens/BOOK_4.jpg" width="150px" alt=""></a>
+    <button type="menu"><a href="./aulaComunicativaB5.html"><img src="../Imagens/BOOK_5.jpg" width="150px" alt=""></a>
+    -->
+          
+        <a href="./aulaComunicativaB1.html" data-text="Book_1"><img src="../imagens/BOOK_1.jpg" alt="" width="150px"></a>   
+        <a href="./aulaComunicativaB2.html" data-text="Book_2"><img src="../Imagens/BOOK_2.jpg" alt="" width="150px"></a>      
+        <a href="./aulaComunicativaB3.html" data-text="Book_3"><img src="../Imagens/BOOK_3.jpg" alt="" width="150px"></a>     
+        <a href="./aulaComunicativaB4.html" data-text="Book_4"><img src="../Imagens/BOOK_4.jpg" alt="" width="150px"></a>        
+        <a href="./aulaComunicativaB5.html" data-text="Book_5"><img src="../Imagens/BOOK_5.jpg" alt="" width="150px"></a>            
+ 
+
+    </body>
+    <style>
+        
+        a{
+            padding-left: 85px;
+        }
+        a:hover { color: #0002; } a:hover a { color: #000; background: rgba(255,255,255,1); } 
+        a:before { 
+       content: ''; 
+       position: absolute; 
+       top: 20%; left: 40%; 
+       transform: translate(-50%,-50%); 
+       display: flex; justify-content: center; 
+       align-items: center; font-size: 5em; 
+       color: rgba(0,0,0,.1); border-radius: 50%; 
+       z-index: -1; opacity: 0; 
+       font-weight: 900; 
+       text-transform: uppercase; letter-spacing: 500px; 
+       transition: letter-spacing 0.5s,left 0.5s; } 
+        a:hover:before { content: attr(data-text); opacity: 1; left: 50%; 
+        letter-spacing: 10px; width: 1800px; height: 1800px; }
+               a:nth-child(6n+1) a:before { background: #bbfc87; } 
+               a:nth-child(6n+2) a:before { background: #75fff8; } 
+               a:nth-child(6n+3) a:before { background: #cb55ef; } 
+               a:nth-child(6n+4) a:before { background: #fcb08d; } 
+               a:nth-child(6n+5) a:before { background: #fd7979; } 
+
+    body {           
+        display: flex; 
+        justify-content:left ;  
+        min-height: 100vh; overflow: hidden; background: #dcdc39;
+    }           
+    </style>
+</html>
