@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="../index.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Influx</title>
+    
+</head>
+
+<body>
+    <a href="../index.html"><h1 class="logoTitle"><img src="../Imagens/logo.png" width="100px" alt=""> </h1></a>
+
+    <h2 id="correctingTests">Correcting Tests</h2>
+    <form action="">
+        <label for="errosListening" class="provaLabel">Informe a quantidade de erros na parte do Listening</label>
+        <input type="text" name="errosListening" id="erroListening"><br><br>
+        <label for="errosReading" class="provaLabel">Informe a quantidade de erros na parte do Reading</label>
+        <input type="text" name="errosReading" id="erroReading"><br><br>
+        <label for="notaComposition" class="provaLabel">Informe a nota da Composition</label>
+        <input type="number" max="2" step="0.1" name="composition" id="composition"><br><br>
+        <button type="button" id="calculaProva" onclick="provas3()">Calcular</button><br><br>
+        
+        <table style="border: 2px solid black;border-spacing:25px">
+
+        
+            <tr>
+                <th>Nota da Composition</th>
+                <th>Nota da Prova</th>
+                <th>Nota Total</th>            
+            </tr>
+            <tr>
+                <td><p id="el">0</p></td>
+                <td><p id="er">0</p></td>
+                <td><p id="comp">0</p></td>
+            </tr>
+            
+            
+      </table>
+      
+    </form>
+    
+
+   
+</body>
+
+</html>
