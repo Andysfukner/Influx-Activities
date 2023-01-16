@@ -28,6 +28,55 @@ function provas3() {
 
                                 //COMPOSITION//
 
+function compoFunction() {
+    let tema1 = document.getElementsByName("temaCorreto");
+    let checkedRadio1 = Array.from(tema1).find((radio) => radio.checked);
+    if (checkedRadio1.value == 1) {
+        rad1 = 0
+    } else {rad1 = 0.1}
+    let tema2 = document.getElementsByName("numPalavras");
+    let checkedRadio2 = Array.from(tema2).find((radio) => radio.checked);
+    if (checkedRadio2.value == 1) {
+        rad2 = 0
+    } else {rad2 = 0.15}
+    let tema3 = document.getElementsByName("vocabulário");
+    let checkedRadio3 = Array.from(tema3).find((radio) => radio.checked);
+    if (checkedRadio3.value == 1) {
+        rad3 = 0
+    } else {rad3 = 0.25}
+    let tema4 = document.getElementsByName("chunks");
+    let checkedRadio4 = Array.from(tema4).find((radio) => radio.checked);
+    if (checkedRadio4.value == 1) {
+        rad4 = 0
+    } else {rad4 = 0.25}
+    let tema5 = document.getElementsByName("erros0");
+    let checkedRadio5 = Array.from(tema5).find((radio) => radio.checked);
+    if (checkedRadio5.value == 1) {
+        rad5 = 0
+    } else {rad5 = 0}
+    let tema6 = document.getElementsByName("erros2");
+    let checkedRadio6 = Array.from(tema6).find((radio) => radio.checked);
+    if (checkedRadio6.value == 1) {
+        rad6 = 0.1
+    } else {rad6 = 0}
+    let tema7 = document.getElementsByName("erros3");
+    let checkedRadio7 = Array.from(tema7).find((radio) => radio.checked);
+    if (checkedRadio7.value == 1) {
+        rad7 = 0.2
+    } else {rad7 = 0}
+    let tema8 = document.getElementsByName("erros6");
+    let checkedRadio8 = Array.from(tema8).find((radio) => radio.checked);
+    if (checkedRadio8.value == 1) {
+        rad8 = 0.3
+    } else {rad8 = 0}
+    
+    
+
+    notaFinal = 2 - (rad1 + rad2 +rad3 +rad4 + rad5 + rad6 + rad7 + rad8)
+
+    document.getElementById("compositionNota").innerHTML = ("A nota da composition é : " + notaFinal);
+}
+         
 
                                     //PERSONAL//
 var materiaisBook1 = ["2", "7", "8", "14", "15","17","25", "23", "26", "29"]
@@ -107,4 +156,4 @@ function personal() {
     }
 
 
-    
+       
