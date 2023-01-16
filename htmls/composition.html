@@ -8,38 +8,59 @@
     <title>Influx</title>
 </head>
 <body>
-    <a href="../index.html"><h1><img src="../Imagens/logo.png" width="100px" alt=""> </h1></a>
+    <a href="../index.html"><h1 class="logoTitle"><img src="../Imagens/logo.png" width="100px" alt=""> </h1></a>
 
-    <h2>Correção de composition</h2>
-    <form action="">
-    <p>Informações sobre avaliação não serão compartilhadas aqui.
-        <input type="radio" name="temaCorreto" value="1" checked="checked"> Sim
-        <input type="radio" name="temaCorreto" value="0"/> Não
+    <h2 class="correctingTests">Correção de composition</h2>
+    <div id="composicao">
+    <p>Os critérios de avaliação não serão compartilhado aqui.  
+        <input type="radio" name="temaCorreto" class="radioCompo" value="1" checked="checked"> Sim
+        <input type="radio" name="temaCorreto" class="radioCompo" value="0"/> Não
     </p>
 
-    <p>Informações sobre avaliação não serão compartilhadas aqui. 
+    <p>Os critérios de avaliação não serão compartilhado aqui.  
         <input type="radio" name="numPalavras" id="numPalavras" value="1" checked="checked"> Sim
         <input type="radio" name="numPalavras" id="numPalavras" value="0"/> Não
     </p>
 
-    <p>nformações sobre avaliação não serão compartilhadas aqui. 
-        <input type="radio" name="vocabulário" id="vocabulário" value="Sim"> Sim
-        <input type="radio" name="vocabulário" id="vocabulário" value="Não"/> Não
+    <p>Os critérios de avaliação não serão compartilhado aqui.  
+        <input type="radio" name="vocabulário" id="vocabulário" value="1" checked="checked"> Sim
+        <input type="radio" name="vocabulário" id="vocabulário" value="0"/> Não
     </p>
 
-    <p>nformações sobre avaliação não serão compartilhadas aqui.
-        <input type="radio" name="temaCorreto" id="temaCorreto" value="Sim"> Sim
-        <input type="radio" name="temaCorreto" id="temaCorreto" value="Não"/> Não
+    <p>Os critérios de avaliação não serão compartilhado aqui.  
+        <input type="radio" name="chunks" id="chunks" value="1" checked="checked"> Sim
+        <input type="radio" name="chunks" id="chunks" value="0"/> Não
     </p>
 
- 
+    <p>Os critérios de avaliação não serão compartilhado aqui.  
+        <input type="radio" name="erros0" id="erros0" value="1" checked="checked"> Sim
+        <input type="radio" name="erros0" id="erros0" value="0"/> Não
+    </p>
+
+    <p>Os critérios de avaliação não serão compartilhado aqui.  
+        <input type="radio" name="erros2" id="erros2" value="1" checked="checked"> Sim
+        <input type="radio" name="erros2" id="erros2" value="0"/> Não
+    </p>
+
+    <p>Os critérios de avaliação não serão compartilhado aqui.  
+        <input type="radio" name="erros3" id="erros3" value="1" checked="checked"> Sim
+        <input type="radio" name="erros3" id="erros3" value="0"/> Não
+    </p>
+
+    <p>Os critérios de avaliação não serão compartilhado aqui.  
+        <input type="radio" name="erros6" id="erros6" value="1" checked="checked"> Sim
+        <input type="radio" name="erros6" id="erros6" value="0"/> Não
+    </p>
 
     
-    <button type="button" onclick="compositionRadio()">Click</button>
+    <button type="button" onclick="compoFunction()">Click</button>
+
+    </div>
     <p id="compositionNota"></p>
-
-    <p id="tema"></p>
-    </form>
-
 </body>
+<style> 
+body {
+    background-color:#dcdc39 ;
+}
+</style>
 </html>
